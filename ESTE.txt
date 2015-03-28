@@ -1,0 +1,15 @@
+Archivo de datos de terms of trade para: Australia, Chile, Colombia, Venezuela, Rusia y Canadá
+
+Australia: 
+
+Link directo al download: 	http://www.abs.gov.au/ausstats/meisubs.NSF/log?openagent&5206001_key_aggregates.xls&5206.0&Time%20Series%20Spreadsheet&5EB8DB67B5B77B41CA257DFD000D4D41&0&Dec%202014&04.03.2015&Latest
+Link de la página: 		http://www.abs.gov.au/AUSSTATS/abs@.nsf/DetailsPage/5206.0Dec%202014?OpenDocument
+
+
+Colombia:
+
+Link directo al download: 	http://www.banrep.gov.co/sites/default/files/paginas/Terminos_Intercambio_CE.xlsx
+Link de la página: 		http://www.banrep.gov.co/es/indice-terminos-intercambio
+
+
+
