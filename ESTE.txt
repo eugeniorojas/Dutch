@@ -15,3 +15,8 @@ Link de la página: 		http://www.banrep.gov.co/es/indice-terminos-intercambio
 Chile: 
 
 www.bcentral.cl // Estadisticas Economicas
+
+***************************************
+
+Broad Effective RER: Bank of International Settlements. Monthly basis
+Link: https://www.bis.org/statistics/eer/index.htm?m=6%7C187 (Broad)
