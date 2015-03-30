@@ -11,6 +11,10 @@ Colombia:
 Link directo al download: 	http://www.banrep.gov.co/sites/default/files/paginas/Terminos_Intercambio_CE.xlsx
 Link de la página: 		http://www.banrep.gov.co/es/indice-terminos-intercambio
 
+CHile:
+
+Link directo al download: 	http://www.bcentral.cl/estudios/documentos-trabajo/xls/dtbc098series_tot.xls
+Link de la página: 		http://www.bcentral.cl/estudios/documentos-trabajo/fichas/098.htm
 
 Chile: 
 
