@@ -24,3 +24,8 @@ www.bcentral.cl // Estadisticas Economicas
 
 Broad Effective RER: Bank of International Settlements. Monthly basis
 Link: https://www.bis.org/statistics/eer/index.htm?m=6%7C187 (Broad)
+
+***************************************
+
+IMF WEO Database: http://elibrary-data.imf.org/DataExplorer.aspx
+Create username and pass. Click on Query across Datasets, Concept.
