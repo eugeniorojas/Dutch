@@ -53,7 +53,7 @@ replace country = "Venezuela" if country == "Venezuela, RB"
 gen num = 1 if tx_val_food_zs_un !=. & tx_val_fuel_zs_un!= . & tx_val_mmtl_zs_un!= . 
 bys country: egen num2 = sum(num)
 
-keep if num2>=20
+keep if num2>=15
 drop num num2
 
 *-------------------------------------------------------------------------------
@@ -153,8 +153,48 @@ preserve
 restore
 
 
+drop if country == ""
 
 
+****************************************************************************************************************************************
+
+keep if maximum>=30
+
+gen product = ""
+replace product ="crude petroleum, petroleum gas" if country =="Algeria"
+replace product ="??????" if country =="Bahamas, The"
+replace product ="Refined petroleum, raw aluminium, petroleum gas" if country =="Bahrain"
+replace product ="crude petroleum, raw sugar, fruit juice, bananas, fish" if country =="Belize"
+replace product ="petroleum gas, precious metals, zinc ore" if country =="Bolivia"
+replace product ="iron ore, crude petroleum, soybeans, raw sugar, poultry meat" if country =="Brazil"
+replace product ="crude petroleum, refined petroleum, cocoa beans, wood, bananas" if country =="Cameroon"
+replace product ="refined copper, copper ore, raw copper" if country =="Chile"
+replace product ="crude petroleum, coal briquettes, refined petroleum" if country =="Colombia"
+replace product ="integrated circuits (WTF?!?!?!?!?!?!), office parts, medical instruments" if country =="Costa Rica"
+replace product ="cocoa beans, refined petroleum, crude petroleum" if country =="Cote d'Ivoire"
+replace product ="????????" if country =="Cyprus"
+replace product ="crude petroleum, bananas, crustaceans, fish, refined petroleum" if country =="Ecuador"
+replace product ="fish, water, gold, sugar" if country =="Fiji"
+replace product ="gold, crude petroleum, cocoa beans" if country =="Ghana"
+replace product ="nutmeg, cocoa, fish, wheat" if country =="Grenada"
+replace product ="aluminium, fish, ferroalloys" if country =="Iceland"
+replace product ="tobacco, radioactive chemicals, sugar" if country =="Malawi"
+replace product ="milk, meat, butter, wood" if country =="New Zealand"
+replace product ="coffee, gold, meat, sugar" if country =="Nicaragua"
+replace product ="crude petroleum, petroleum gas, refined petroleum" if country =="Nigeria"
+replace product ="crude petroleum, petroleum gas, refined petroleum" if country =="Norway"
+replace product ="soybeans, meat, corn, wheat" if country =="Paraguay"
+replace product ="crude petroleum, refined petroleum" if country =="Saudi Arabia"
+replace product ="bananas, refined petroleum, beer, water" if country =="St. Lucia"
+replace product ="wheat, cassava, rice, animal food" if country =="St. Vincent and the Grenadines"
+replace product ="petroleum gas, ammonia, refined petroleum, iron reductions" if country =="Trinidad and Tobago"
+replace product ="coffee, refined petroleum, cement, fish" if country =="Uganda"
+replace product ="soybeans, meat, rice, wheat" if country =="Uruguay"
+replace product ="crude petroleum, refined petroleum, iron ore" if country =="Venezuela"
+replace product ="copper, corn, tobbaco, cotton" if country =="Zambia"
+
+
+save final.dta, replace
 
 ****************************************************************************************************************************************
 HASTA AQUI VA
