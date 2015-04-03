@@ -17,9 +17,10 @@ set more off
 * Do Data: merge the databases
 *------------------------------
 
-cd "C:\Users\Eugenio Rojas\Desktop\dutch"
-*cd "C:\Users\david\Dropbox\Documents\Doctorado\Second year\Semester II (2015 I)\712 - Mendoza (International macro with incomplete markets and fin frict)\Proposals Mendoza\Data_ToT\dutch"
+*cd "C:\Users\Eugenio Rojas\Desktop\dutch"
+cd "C:\Users\david\Dropbox\Documents\Doctorado\Second year\Semester II (2015 I)\712 - Mendoza (International macro with incomplete markets and fin frict)\Proposals Mendoza\Data_ToT\dutch"
 
+<<<<<<< HEAD
 *use "Databases\trade_wb.dta", clear
 use wbdata.dta, clear
 /*
@@ -39,6 +40,13 @@ drop _merge
 *mmerge countryname year using "Databases\RER.dta"
 *drop _merge
 merge m:m countryname year using "RER.dta"
+=======
+use "Databases\wbdata.dta", clear
+
+keep if countryname=="Chile" | countryname=="Australia" | countryname == "Canada" | countryname == "Russian Federation" | countryname == "Venezuela, RB" 
+mmerge countryname year using "Databases\RER.dta"
+*merge m:m countryname year using "RER.dta"
+>>>>>>> origin/master
 keep if _merge==3
 drop _merge 					// The dropped observations are because years do not coincide. 
 
