@@ -1,0 +1,5 @@
+Lista 
+1)	Base de datos, quedarse con paises. Criterio: 30%? De exportaciones son fuel y/o ore-metal.
+2)	Una vez seleccionados los paises, VAR para cada uno en donde se testee si exportaciones 
+        granger causan a los precios de commodities. 
+3)      Con esos paises, mirar dinamicas y ver que pasa con R&D.
