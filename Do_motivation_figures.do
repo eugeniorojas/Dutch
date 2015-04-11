@@ -71,7 +71,7 @@ gen max_fuel = tx_val_fuel_zs_un
 gen max_ores = tx_val_mmtl_zs_un
 
 * k es el numero de anhos que queremos que este por encima del threshold
-local k = 10
+local k = 4
 
 forvalues i=1(1)`k'{
 	bys country: egen max_fo = max(max_food)
@@ -158,7 +158,7 @@ drop if country == ""
 
 ****************************************************************************************************************************************
 
-keep if maximum>=30
+keep if maximum>=25
 
 gen product = ""
 replace product ="crude petroleum, petroleum gas" if country =="Algeria"
